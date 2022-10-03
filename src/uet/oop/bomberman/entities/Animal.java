@@ -78,7 +78,6 @@ public class Animal extends Entity {
     }
 
     public Animal() {
-
     }
 
     @Override

@@ -66,6 +66,8 @@ public class BombermanGame extends Application {
         });
         // init bomber
         bomber = new Bomber(1, 1, Sprite.player_right.getFxImage());
+        entities.add(bomber);
+
         AnimationTimer timer = new AnimationTimer() {
             @Override
             public void handle(long l) {
@@ -77,8 +79,15 @@ public class BombermanGame extends Application {
 
         createMap();
 
-        Entity bomberman = new Bomber(1, 1, Sprite.player_right.getFxImage());
-        entities.add(bomberman);
+//        Entity bomberman = new Bomber(1, 1, Sprite.player_right.getFxImage());
+//        entities.add(bomberman);
+
+//        Entity ballomleft1 = new Ballom(1, 10, Sprite.balloom_left1.getFxImage());
+//        entities.add(ballomleft1);
+//        Entity ballomleft2 = new Ballom(1, 5, Sprite.balloom_left2.getFxImage());
+//        entities.add(ballomleft2);
+//      Entity ballom = new Ballom(1, 10, Sprite.balloom_left1.getFxImage());
+//      entities.add(ballom);
     }
 
     public void createMap() {

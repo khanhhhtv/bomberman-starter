@@ -15,7 +15,7 @@ public class Bomber extends Animal {
 
     @Override
     public void update() {
-        setXYBlock(1, 1);
+        //setXYBlock(1, 1);
         //setXYBlock(i++%10, 1);
     }
 }
