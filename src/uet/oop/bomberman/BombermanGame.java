@@ -147,8 +147,16 @@ public class BombermanGame extends Application {
         for (Entity ett : entities) {
             ett.update();
         }
-        for (Entity ett: block) {
-            ett.update();
+        for (int i = 0; i < block.size(); i++) {
+            Entity ett = block.get(i);
+            if (ett instanceof Bomb) {
+                if (((Bomb) ett).isAlive()) ett.update();
+                else {
+                    block.remove(ett);
+                    i--;
+                }
+            }
+            else ett.update();
         }
         for (Entity ett: entity) {
             ett.update();
